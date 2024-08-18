@@ -1,0 +1,17 @@
+.links{
+    background-color: #d6e0f5;
+    color:aqua;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+}
+a{
+    margin: 5px 10px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}

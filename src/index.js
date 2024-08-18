@@ -1,22 +1,27 @@
 import {createRoot} from  "react-dom/client";
-import apple from "./apple/apple"
-import gauva from "./gauva/gauva"
+import Apple from "./apple/apple"
+import Gauva from "./gauva/gauva"
+import Navbar from "./navbar"
+
 const root = createRoot(document.getElementById("root"));
-function mango() {
+function Mango() {
     return <div>
-        <h1>mango</h1>
+         <Navbar/>
+       <h1>  mango</h1>
+      
+        
     </div>
 }
 
 const currentpath = window.location.pathname
 if(currentpath=="/"){
-    root.render(mango())
+    root.render(<Mango/>)
 }
 else if (currentpath=="/apple"){
-    root.render(apple())
+    root.render(<Apple/>)
 }
 else if (currentpath=="/gauva"){
-    root.render(gauva())
+    root.render(<Gauva/>)
 }
 
 

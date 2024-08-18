@@ -1,6 +1,8 @@
-function apple(){
+import Navbar from "../navbar"
+function Apple(){
     return <div> 
-        <h1>apple</h1>
+        <Navbar/>
+        <h1>Apple</h1>
     </div>
 }
-export default apple()
+export default Apple;
